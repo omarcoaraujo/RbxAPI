@@ -1,39 +1,6 @@
 {
-  "name": "RbxAPI",
-	"tree": {
-		"$className": "DataModel",
-
-    "ReplicatedStorage": {
-      "$className": "ReplicatedStorage",
-      "$ignoreUnknownInstances": true,
-      "Packages": {
-        "$className": "Folder",
-        "$path": "Packages",
-        "$ignoreUnknownInstances": true,
-
-        "RbxAPI": {
-          "$path": "RbxAPI"
-        }
-      }
-    },
-
-		"ServerScriptService": {
-			"$className": "ServerScriptService",
-			"$ignoreUnknownInstances": true,
-			"ServerTest": {
-				"$path": "tests/Server.server.luau"
-			}
-		},
-
-    "StarterPlayer": {
-      "$className": "StarterPlayer",
-      "$ignoreUnknownInstances": true,
-      "StarterPlayerScripts": {
-        "$className": "StarterPlayerScripts",
-        "ClientTest": {
-          "$path": "tests/Client.client.luau"
-        }
-      }
+    "name": "RbxAPI",
+    "tree": {
+        "$path": "RbxAPI.luau"
     }
- 	}
 }
