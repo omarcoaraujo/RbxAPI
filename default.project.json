@@ -1,6 +1,6 @@
 {
     "name": "RbxAPI",
     "tree": {
-        "$path": "RbxAPI.luau"
+        "$path": "lib"
     }
 }

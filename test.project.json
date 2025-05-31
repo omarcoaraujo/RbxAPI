@@ -12,10 +12,7 @@
         "$ignoreUnknownInstances": true,
 
         "RbxAPI": {
-          "$path": "RbxAPI.luau",
-          "RemoteSignal": {
-            "$path": "RemoteSignal.luau"
-          }
+          "$path": "lib"
         }
       }
     },
