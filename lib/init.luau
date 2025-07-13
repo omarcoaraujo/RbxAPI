@@ -135,7 +135,7 @@ function RbxAPI._getServerReplica(apiFolder)
 end
 
 function RbxAPI.get(name: string): RbxAPI | ClientRbxAPI
-	local apiFolder = script:WaitForChild("name")
+	local apiFolder = script:WaitForChild(name)
 
 	if RunService:IsClient() then
 		local serverApiReplica = RbxAPI._getServerReplica(apiFolder)
