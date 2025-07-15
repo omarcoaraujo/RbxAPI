@@ -1,6 +1,6 @@
 [package]
 name = "omarcoaraujo/rbxapi"
-version = "0.1.7"
+version = "0.1.8"
 license = "MIT"
 authors = ["Marco Antônio"]
 registry = "https://github.com/UpliftGames/wally-index"
