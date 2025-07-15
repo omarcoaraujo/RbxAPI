@@ -45,7 +45,14 @@ function endPoints.getRemoteSignals(_, api: RbxAPI)
 end
 
 function endPoints.callMethod(player: Player, api: RbxAPI, methodName: string, ...)
-	return api[methodName](api, player, ...)
+	local results = { pcall(api[methodName], api, player, ...) }
+	local success = results[1]
+
+	if success then
+		return select(2, unpack(results))
+	else
+		warn(results[2])
+	end
 end
 
 --// Factory
@@ -98,6 +105,7 @@ function RbxAPI.new(params: { name: string, remoteSignalNames: { string }? }): R
 				if typeof(requestName) ~= "string" then
 					continue
 				end
+
 				local endPointResult = { endPoints[requestName](player, self, ...) }
 
 				if #endPointResult > 0 then
