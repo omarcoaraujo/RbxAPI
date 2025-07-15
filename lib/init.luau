@@ -24,7 +24,7 @@ function endPoints.getMethods(_, api: RbxAPI)
 	local methods = {}
 
 	for name, method in api do
-		if typeof(method) == "function" then
+		if typeof(method) == "function" and name:sub(1, 1) ~= "_" then
 			table.insert(methods, name)
 		end
 	end
